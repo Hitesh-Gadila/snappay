@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header start -->
+    <div class="container p-0 bg-dbl">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logo-pic.png" alt="logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item list-cls">
+                        <a class="nav-link text-white" href="#">
+                            <img src="images/play-gam.png" class="pic-wd"> Play & Win
+                        </a>
+                    </li>
+                    <li class="nav-item list-cls">
+                        <a class="nav-link text-white" href="addmoney.html">
+                            <img src="images/add-money.png" class="pic-wd">Add Money</a>
+                    </li>
+                    <li class="nav-item list-cls">
+                        <a class="nav-link text-white" href="addmoney.html">
+
+                            <img src="images/wallet-money.png" class="pic-wd">Wallet Balance</a>
+
+                    </li>
+
+                    <li class="nav-item list-cls">
+                        <a class="nav-link logn-btn" href="login-signup.html"  [><i
+                                class="fa fa-user"></i> Login / Register</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <!-- header end -->
+    
+    <div class="container-fluid p-0 bg-light">
+        <section class="bg-dbl">
+            <p class="text-center">home/wallet</p>
+            <div class="w-80 mx-auto bg-white py-4 px-3 border-bottom bdr-t">
+                <div class="clearfix">
+                    <div class="float-left">
+                        <i class="fa fa-money fa-2x border border-dark rounded-circle p-2 mr-2"></i>
+                    </div>
+                    <div class="float-right border-left pl-5">
+                        <p class="mb-0 fssss">TOTAL BALANCE</p>
+                        <p class="h3">₹ 0</p>
+                    </div>
+                    <p class="mb-0 fss">SNAPPAY WALLET</p>
+                    <p class="fsss">₹ 0</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dbl">
+            <div class="w-80 mx-auto bg-white">
+                <p class="fss mb-0 pb-2 pt-4 pl-5">ADD MONEY TO SNAPPAY WALLET</p>
+            </div>
+            <div>
+            </div>
+        </section>
+        <form>
+            <section class="w-80 mx-auto bg-light p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group hvrx mb-3 input-group-lg">
+                            <div class="input-group-prepend border-right-0">
+                                <span class="input-group-text bg-white ">₹</span>
+                            </div>
+                            <input type="text" class="form-control border-left-0" placeholder="Enter Amount ">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary w-75 form-control" data-toggle="modal"
+                            data-target="#money">Add Money</button>
+                    </div>
+                </div>
+                <a data-toggle="collapse" data-target="#pc">Have a Promocode?</a>
+                <div id="pc" class="collapse">
+                    <div class="input-group mb-3">
+                        <input type="text" class="" placeholder="Enter Promocode">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+        <section class="w-80 mx-auto bg-white">
+            <table class="table fst">
+                <thead>
+                    <tr>
+                        <th>TRANSACTIONS</th>
+                        <th>AMOUNT</th>
+                        <th>STATUS</th>
+                        <th>COMMENTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>March 21</td>
+                    </tr>
+                    <tr>
+                        <td class="border-top-0">
+                            <div class="float-left"><i
+                                    class="fa fa-money fa-2x border border-dark rounded-circle p-2 mr-2"></i></div>
+                            Sent from wallet to john PAYTM PAYMENTS BANK<p>28 MAR, 2:28 PM</p>
+                            <p class="mb-0">TO Gadila Hitesh Reddy</p>
+                            <p>Transaction ID 33455398354</p>
+                        </td>
+                        <td class="border-top-0">
+                            <p>₹21</p>
+                        </td>
+                        <td class="border-top-0">
+                            <p>sucess</p>
+                        </td>
+                        <td class="border-top-0">
+                            <p>Bank txn ID 1538002471</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="float-left"><i
+                                    class="fa fa-money fa-2x border border-dark rounded-circle p-2 mr-2"></i></div>
+                            Sent from wallet to john PAYTM PAYMENTS BANK<p>28 MAR, 2:28 PM</p>
+                            <p class="mb-0">TO Gadila Hitesh Reddy</p>
+                            <p>Transaction ID 33455398354</p>
+                        </td>
+                        <td>
+                            <p>₹21</p>
+                        </td>
+                        <td>
+                            <p>sucess</p>
+                        </td>
+                        <td>
+                            <p>Bank txn ID 1538002471</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="float-left"><i
+                                    class="fa fa-money fa-2x border border-dark rounded-circle p-2 mr-2"></i></div>
+                            Sent from wallet to john PAYTM PAYMENTS BANK<p>28 MAR, 2:28 PM</p>
+                            <p class="mb-0">TO Gadila Hitesh Reddy</p>
+                            <p>Transaction ID 33455398354</p>
+                        </td>
+                        <td>
+                            <p>₹21</p>
+                        </td>
+                        <td>
+                            <p>sucess</p>
+                        </td>
+                        <td>
+                            <p>Bank txn ID 1538002471</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <!-- The Modal -->
+            <div class="modal fade" id="money">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="close d-flex justify-content-start p-2"
+                            data-dismiss="modal">&times;</button>
+                        <!-- Modal Header -->
+                        <div class="modal-header d-flex justify-content-between">
+                            <h4 class="modal-title ">Add Money to Wallet</h4>
+                            <h4>₹558</h4>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p class="fss">SELECT AN OPTION TO ADD MONEY</p>
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-check my-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio"
+                                                data-toggle="collapse" data-target="#scd">State Bank Of India Debit Card
+                                            <p class="fst m-0">xxxx 1234</p>
+                                            <div id="scd" class="collapse">
+                                                <input type="number" max="9999" placeholder="CVV" class="form-control">
+                                            </div>
+                                        </label>
+                                        <hr>
+                                    </div>
+                                    <div class="form-check my-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio"
+                                                data-toggle="collapse" data-target="#netb">Net Banking
+                                            <div id="netb" class="collapse">
+                                                <select class="form-control">
+                                                    <option>Select Bank</option>
+                                                    <option>SBI</option>
+                                                    <option>HDFC</option>
+                                                    <option>AXIS</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                        <hr>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio"
+                                                data-toggle="collapse" data-target="#cds">Debit/Credit Cards
+
+                                            <div id="cds" class="collapse">
+                                                <div class="form-group border rounded-lg p-3">
+                                                    <input type="number" class="form-control br-0"
+                                                        placeholder="Card Number">
+                                                    <div class="form-row my-3">
+                                                        <div class="col">
+                                                            <input type="text" placeholder="MM/YY"
+                                                                class="form-control br-0">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="number" placeholder="CVV"
+                                                                class="form-control br-0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                        id="customCheck">
+                                                    <label class="custom-control-label fst" for="customCheck">
+                                                        <p>Save this card for future payments</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn d-block btn-primary form-control">PAY ₹555</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--Footer-->
+    <footer class="page-footer font-small stylish-color-dark">
+
+        <div class="container bg-clr-cls" style="max-width:1520px !important;">
+            <div class="row">
+                <div class="col-md-6  clr-wt">
+                    <div class="m-cls"><a href="aboutus.html">About Us</a></div>
+                    <div class="m-cls"><a href="contactus.html">Contact Us</a></div>
+                    <div class="m-cls"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                    <div class="m-cls"><a href="#">Blog</a></div>
+                    <div class="m-cls"><a href="#">Media</a></div>
+                    <div class="m-cls"><a href="#">24x7</a></div>
+                </div>
+                <div class="col-md-6 text-right  clr-wt">
+                    <div class="m-cls"><a href="#"><i class="fa fa-apple"></i></a></div>
+                    <div class="m-cls"><a href="#"><i class="fa fa-android"></i></a></div>
+                    <div class="m-cls"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    <div class="m-cls"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                    <div class="m-cls"><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="m-cls"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left bg-secondary">
+
+                <!-- Grid row -->
+                <div class="row p-4 clr-wt">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto">
+                        <img src="images/logo-pic.png">
+                        <p>Snappay is a payment gateway that offers comprehensive payment services for customer and
+                            merchants.
+                            We offer mobile payment solutions for merchants and allow consumers to make seamless mobile
+                            payments
+                            from Cards, Bank Accounts and Digital Credit among others.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Play & Win</a>
+                            </li>
+                            <li>
+                                <a href="#!">Add Money</a>
+                            </li>
+                            <li>
+                                <a href="#!">Wallet Balance</a>
+                            </li>
+                            <li>
+                                <a href="#!">Profile</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Mobile Recharge</a>
+                            </li>
+                            <li>
+                                <a href="#!">Electricity</a>
+                            </li>
+                            <li>
+                                <a href="#!">DTH</a>
+                            </li>
+                            <li>
+                                <a href="#!">Movies</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Others</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!">Landline</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bus</a>
+                            </li>
+                            <li>
+                                <a href="#!">Hotels</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <hr class="p-0 m-0">
+
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center bg-secondary p-4 m-0">
+                <li class="list-inline-item">
+                    <h5 class="mb-1">Register for free</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+
+            <hr class="p-0 m-0">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center bg-secondary p-4 m-0 clr-wt">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fa fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fa fa-linkedin"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fa fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center p-4 bg-dark clr-wt">
+                <p>© 2020 Copyright:<span><a href="https://mdbootstrap.com/"> SnaPay.com</a></span></p>
+
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+    <style>
+        .w-80 {
+            max-width: 80%;
+        }
+        .bdr-t {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .fss {
+            font-size: .8rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+        }
+        .fsss {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+        .bg-white {
+            background-color: #fff;
+
+        }
+        .bg-dbl {
+            background-color: #002F6C;
+        }
+        .fssss {
+            font-size: .8rem;
+            font-weight: 500;
+        }
+        .fst th,
+        .fst p {
+            font-size: .8rem;
+            font-weight: 400;
+            color: rgba(112, 107, 107, 0.918);
+        }
+        .br-0 {
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 0;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+       
+        
+        <title>Flights</title>
+        
+        
+        <!-- Stylesheet
+        ============================================= -->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+            <div class="container p-0 bg-dbl">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <!-- Brand/logo -->
+                    <a class="navbar-brand" href="home.html">
+                        <img src="images/logo-pic.png" alt="logo" class="img-fluid">
+                    </a>
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item list-cls">
+                                <a class="nav-link text-white" href="#">
+                                    <img src="images/play-gam.png" class="pic-wd"> Play & Win
+                                </a>
+                            </li>
+                            <li class="nav-item list-cls">
+                                <a class="nav-link text-white" href="addmoney.html">
+                                    <img src="images/add-money.png" class="pic-wd">Add Money</a>
+                            </li>
+                            <li class="nav-item list-cls">
+                                <a class="nav-link text-white" href="addmoney.html">
+        
+                                    <img src="images/wallet-money.png" class="pic-wd">Wallet Balance</a>
+        
+                            </li>
+        
+                            <li class="nav-item list-cls">
+                                <a class="nav-link logn-btn" href="login-signup.html"  [><i
+                                        class="fa fa-user"></i> Login / Register</a>
+                            </li>
+        
+        
+        
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+             <!-- Flights Search
+      ============================================= -->
+      <div class="container-fluid p-0">
+          <div class="bg-dbl p-4">
+      <div class="bg-white shadow-md rounded p-4 w-75 mx-auto">
+        <h2 class="text-4 mb-3">Book Domestic and International Flights</h2>
+        <form id="bookingFlight" method="post">
+                <div class="mb-3">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input id="oneway" name="flight-trip" class="custom-control-input" checked="" required type="radio">
+                      <label class="custom-control-label" for="oneway">One Way</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input id="roundtrip" name="flight-trip" class="custom-control-input" required type="radio">
+                      <label class="custom-control-label" for="roundtrip">Round Trip</label>
+                    </div>
+                  </div>
+                <div class="form-row">
+                <div class="col-md-6 col-lg-2 form-group">
+                      <input type="text" class="form-control" id="flightFrom" required placeholder="From">
+                      <span class="icon-inside"><i class="fa fa-map-marker"></i></span>
+                    </div>
+                    <div class="col-md-6 col-lg-2 form-group">
+                      <input type="text" class="form-control" id="flightTo" required placeholder="To">
+                      <span class="icon-inside"><i class="fa fa-map-marker"></i></span>
+                    </div>
+                    <div class="col-md-6 col-lg-2 form-group">
+                      <input id="flightDepart" type="number" class="form-control" required placeholder="Depart Date">
+                      <span class="icon-inside"><i class="fa fa-calendar"></i></span>
+                    </div>
+                    <div class="col-md-6 col-lg-2 form-group">
+                      <input id="flightReturn" type="number" class="form-control" required placeholder="Return Date">
+                      <span class="icon-inside"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  <div class="col-md-6 col-lg-2 travellers-class form-group dropdown">
+                    <input type="text" id="flightTravellersClass" class="travellers-class-input form-control dropdown-toggle" name="flight-travellers-class" placeholder="Travellers, Class" readonly required onkeypress="return false;" data-toggle="dropdown">
+                    <span class="icon-inside"><i class="fa fa-caret-down"></i></span>
+                    <div class="travellers-dropdown dropdown-menu w-100">
+                      <div class="row p-2">
+                        <div class="col-sm-4">
+                          <p class="mb-sm-0">Adults</p>
+                         <p><small class="text-muted">(12+yrs)</small></p>
+                        </div>
+
+                        <div class="col-sm-8">
+                          <div class="qty input-group">
+                            <div class="input-group-prepend">
+                              <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#flightAdult-travellers" data-toggle="spinner">-</button>
+                            </div>
+                            <input type="text" data-ride="spinner" id="flightAdult-travellers" class="qty-spinner form-control" value="1" readonly>
+                            <div class="input-group-append">
+                              <button type="button" class="btn bg-light-4" data-value="increase" data-target="#flightAdult-travellers" data-toggle="spinner">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <div class="row p-2">
+                        <div class="col-sm-4">
+                          <p class="mb-sm-0">Children</p>
+                          <p><small class="text-muted">(2-12 yrs)</small></p>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="qty input-group">
+                            <div class="input-group-prepend">
+                              <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#flightChildren-travellers" data-toggle="spinner">-</button>
+                            </div>
+                            <input type="text" data-ride="spinner" id="flightChildren-travellers" class="qty-spinner form-control" value="0" readonly>
+                            <div class="input-group-append">
+                              <button type="button" class="btn bg-light-4" data-value="increase" data-target="#flightChildren-travellers" data-toggle="spinner">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <div class="row p-2">
+                        <div class="col-sm-4">
+                          <p class="mb-sm-0">Infants</p>
+                          <p><small class="text-muted">(2-12 yrs)</small></p>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="qty input-group">
+                            <div class="input-group-prepend">
+                              <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#flightInfants-travellers" data-toggle="spinner">-</button>
+                            </div>
+                            <input type="text" data-ride="spinner" id="flightInfants-travellers" class="qty-spinner form-control" value="0" readonly>
+                            <div class="input-group-append">
+                              <button type="button" class="btn bg-light-4" data-value="increase" data-target="#flightInfants-travellers" data-toggle="spinner">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-2">
+                      <div class="mb-3">
+                        <div class="custom-control custom-radio">
+                          <input id="flightClassEconomic" name="flight-class" class="flight-class custom-control-input" value="0" checked="" required type="radio">
+                          <label class="custom-control-label" for="flightClassEconomic">Economic</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input id="flightClassPremiumEconomic" name="flight-class" class="flight-class custom-control-input" value="1" required type="radio">
+                          <label class="custom-control-label" for="flightClassPremiumEconomic">Premium Economic</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input id="flightClassBusiness" name="flight-class" class="flight-class custom-control-input" value="2" required type="radio">
+                          <label class="custom-control-label" for="flightClassBusiness">Business</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input id="flightClassFirstClass" name="flight-class" class="flight-class custom-control-input" value="3" required type="radio">
+                          <label class="custom-control-label" for="flightClassFirstClass">First Class</label>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary btn-block submit-done" type="button">Done</button>
+                    </div>
+                  </div>
+                  
+                <div class="col-md-6 col-lg-2 form-group">
+                <button class="btn btn-primary btn-block" type="submit">Search</button>
+                </div>
+                </div>
+                </form>            
+        </div>
+    </div>
+    </div><!-- Flights Search end -->
+    <div class="container">
+        <section class="section px-3 px-md-5 pb-4">
+          <h2 class="text-9 font-weight-600 text-center">Why Book Flight with Snappay</h2>
+          <p class="lead mb-5 text-center">Book Flight Tickets Online. Save Time and Money!</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="featured-box text-center">
+                <div class="featured-box-icon text-primary"> <i class="fa fa-dollar"></i> </div>
+                <h3>No Booking Charges</h3>
+                <p>No hidden charges, no payment fees, and free customer service. So you get the best deal every time!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="featured-box text-center">
+                <div class="featured-box-icon text-primary"> <i class="fa fa-percent"></i> </div>
+                <h3>Cheapest Price</h3>
+                <p>Always get cheapest price with the best in the industry. So you get the best deal every time.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="featured-box text-center">
+                <div class="featured-box-icon text-primary"> <i class="fa fa-times-circle"></i> </div>
+                <h3>Easy Cancellation &amp; Refunds</h3>
+                <p>Get instant refund and get any booking fees waived off!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section bg-white shadow-md">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+            <h3 class="text-6 mb-4">Popular Domestic Routes</h3>
+             <div class="border shadow-sm rounded p-4">
+                <p class="d-flex align-items-center">Delhi to Mumbai Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Bangalore to Delhi Flights<a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Hyderabad to Delhi Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Ahmedabad to Mumbai Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Mumbai to Chennai Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="text-center mb-0"><a href="#" class="d-inline-block">View All</a></p>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+            <h3 class="text-6 mb-4">Popular International Routes</h3>
+             <div class="border shadow-sm rounded p-4">
+                <p class="d-flex align-items-center">Mumbai to Dubai Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Delhi to Toronto Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Chennai to Singapore Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Delhi to London Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="d-flex align-items-center">Kolkata to Bangkok Flights <a href="#" class="btn btn-sm btn-outline-primary shadow-none ml-auto"><i class="fas fa-search d-block d-sm-none"></i> <span class="d-none d-sm-block">Search Flights</span></a></p>
+                <hr>
+                <p class="text-center mb-0"><a href="#" class="d-inline-block">View All</a></p>
+              </div>
+            </div>
+          </div>
+         </div>
+        </section>
+        <div class="section py-4">
+            <div class="container">
+              <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Book Flights</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Why Snappay?</a> </li>
+              </ul>
+              <div class="tab-content my-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                  <p>Online Book Domestic and International flights Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. Mediocrem qualisque in has. Enim utroque perfecto id mei, ad eam tritani labores facilisis, ullum sensibus no cum. Eius eleifend in quo. At mei alia iriure propriae.</p>
+                  <p>Partiendo voluptatibus ex cum, sed erat fuisset ne, cum ex meis volumus mentitum. Alienum pertinacia maiestatis ne eum, verear persequeris et vim. Mea cu dicit voluptua efficiantur, nullam labitur veritus sit cu. Eum denique omittantur te, in justo epicurei his, eu mei aeque populo. Cu pro facer sententiae, ne brute graece scripta duo. No placerat quaerendum nec, pri alia ceteros adipiscing ut. Quo in nobis nostrum intellegebat. Ius hinc decore erroribus eu, in case prima exerci pri. Id eum prima adipisci. Ius cu minim theophrastus, legendos pertinacia an nam.</p>
+                </div>
+                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                  <p>Partiendo voluptatibus ex cum, sed erat fuisset ne, cum ex meis volumus mentitum. Alienum pertinacia maiestatis ne eum, verear persequeris et vim. Mea cu dicit voluptua efficiantur, nullam labitur veritus sit cu. Eum denique omittantur te, in justo epicurei his, eu mei aeque populo. Cu pro facer sententiae, ne brute graece scripta duo. No placerat quaerendum nec, pri alia ceteros adipiscing ut. Quo in nobis nostrum intellegebat. Ius hinc decore erroribus eu, in case prima exerci pri. Id eum prima adipisci. Ius cu minim theophrastus, legendos pertinacia an nam.</p>
+                  <p>Instant Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. Mediocrem qualisque in has. Enim utroque perfecto id mei, ad eam tritani labores facilisis, ullum sensibus no cum. Eius eleifend in quo. At mei alia iriure propriae.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    <style>
+        .bg-dbl{
+            background-color: #002F6C;
+        }
+    </style>
+        </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <img src="images/logo-pic.png" alt="logo" class="img-fluid mt-3">
+        <section class="top-sec bg-white mt-3 p-3 z-depth-1 rounded-lg sticky-top">
+            <div class="fsnn">
+                <a href=""><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i>GO BACK</a>
+            </div>
+            <hr class="m-2">
+            <div class=" d-flex justify-content-between">
+                <div class="fst">
+                    <h5>Snappay bsnl Recharge Order</h5>
+                    <p>Transaction ID: 13446433800</p>
+                </div>
+                <div class="fst">
+                    <p class="m-0">Amount to be paid</p>
+                    <h4>₹50</h4>
+                </div>
+            </div>
+        </section>
+        <section class="top-sec bg-white mt-3 p-4 z-depth-1 rounded-lg">
+            <div class="fstt">
+                <p>SELECT AN OPTION TO PAY</p>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label fst">
+                    <input type="checkbox" class="form-check-input" value="">
+                    <h6 class="mb-1">Snappay Balance</h6>
+                    <p class="mb-0">Available Balance ₹0</p>
+                    <p class="text-danger">You do not have enough balance for this payment</p>
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form-check my-3">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio"
+                            data-toggle="collapse" data-target="#scd">State Bank Of India Debit Card
+                        <p class="fst m-0">xxxx 1234</p>
+                        <div id="scd" class="collapse">
+                            <input type="number" max="9999" placeholder="CVV" class="form-control">
+                        </div>
+                    </label>
+                    <hr>
+                </div>
+                <div class="form-check my-3">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio"
+                            data-toggle="collapse" data-target="#netb">Net Banking
+                        <div id="netb" class="collapse">
+                            <select class="form-control">
+                                <option>Select Bank</option>
+                                <option>SBI</option>
+                                <option>HDFC</option>
+                                <option>AXIS</option>
+                            </select>
+                        </div>
+                    </label>
+                    <hr>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio"
+                            data-toggle="collapse" data-target="#ds">Debit Card
+
+                        <div id="ds" class="collapse">
+                            <div class="form-group border rounded-lg p-3">
+                                <input type="number" class="form-control br-0"
+                                    placeholder="Card Number">
+                                <div class="form-row my-3">
+                                    <div class="col">
+                                        <input type="text" placeholder="MM/YY"
+                                            class="form-control br-0">
+                                    </div>
+                                    <div class="col">
+                                        <input type="number" placeholder="CVV"
+                                            class="form-control br-0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"
+                                    id="customCheck">
+                                <label class="custom-control-label fst" for="customCheck">
+                                    <p>Save this card for future payments</p>
+                                </label>
+                            </div>
+                        </div>
+                    </label>
+                    <hr>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio"
+                            data-toggle="collapse" data-target="#cs">Credit Card
+
+                        <div id="cs" class="collapse">
+                            <div class="form-group border rounded-lg p-3">
+                                <input type="number" class="form-control br-0"
+                                    placeholder="Card Number">
+                                <div class="form-row my-3">
+                                    <div class="col">
+                                        <input type="text" placeholder="MM/YY"
+                                            class="form-control br-0">
+                                    </div>
+                                    <div class="col">
+                                        <input type="number" placeholder="CVV"
+                                            class="form-control br-0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"
+                                    id="customCheck">
+                                <label class="custom-control-label fst" for="customCheck">
+                                    <p>Save this card for future payments</p>
+                                </label>
+                            </div>
+                        </div>
+                    </label>
+                    <hr>
+                </div>
+                <button type="button" class="btn d-block btn-primary form-control">PAY ₹555</button>
+            
+            
+
+
+        </section>
+    </div>
+    <style>
+        .z-depth-1 {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+        }
+
+        .bg-white {
+            background-color: #fff;
+        }
+
+        .fst p {
+            font-size: .8rem;
+            font-weight: 400;
+        }
+
+        .fstt p {
+            font-size: .8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .fsnn a {
+            color: black;
+        }
+
+        .fsnn a:hover {
+            text-decoration: none;
+        }
+    </style>
+</body>
+
+</html>
